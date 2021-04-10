@@ -1,0 +1,9 @@
+
+:root {
+  --c-bg: #f7f8fe;
+  --c-text-light-1: black;
+  --c-text-light: rgba(0, 0, 0, .5);
+  --c-divider-dark: #ec4a29;
+  --c-brand: #2e40ea;
+  --c-brand-light: #3e50fa;
+}

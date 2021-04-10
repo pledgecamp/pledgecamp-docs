@@ -1,0 +1,21 @@
+
+header {
+  background-color: #f7f8fe;
+}
+.sidebar > .sidebar-links > .sidebar-link > .sidebar-links > .sidebar-link > .sidebar-links > .sidebar-link > .sidebar-links > .sidebar-link > .sidebar-links > .sidebar-link > .sidebar-link-item {
+  display: block;
+  padding: 0.2rem 1.5rem 0.3rem 5rem;
+  line-height: 1.4;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+h4 {
+  margin-top: 16px;
+}
+@media (min-width: 420px) {
+   header .description {
+    font-size: 1.4rem !important;
+    line-height: 1.4 !important;
+    margin-top: 8px;
+  }
+}

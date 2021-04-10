@@ -1,0 +1,32 @@
+{
+  "name": "pledgecamp-docs",
+  "version": "0.1.0",
+  "description": "Pledgecamp platform developer documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pledgecamp/pledgecamp-docs.git"
+  },
+  "keywords": [
+    "pledgecamp",
+    "crowdfunding",
+    "documentation",
+    "docs",
+    "vite",
+    "vitepress",
+    "vue3"
+  ],
+  "author": "Sam Pullman <spullman@pledgecamp.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pledgecamp/pledgecamp-docs/issues"
+  },
+  "homepage": "https://github.com/pledgecamp/pledgecamp-docs#readme",
+  "devDependencies": {
+    "vitepress": "^0.13.0"
+  }
+}
