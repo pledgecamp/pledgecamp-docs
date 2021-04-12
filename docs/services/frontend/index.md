@@ -1,7 +1,7 @@
 # Pledgecamp Frontend
 
 The Pledgecamp frontend is written in [Vue3](https://github.com/vuejs/vue-next), and uses [Vite](https://github.com/vitejs/vite) for
-development. Before submitting pull requests, please read the [Contribution Guidelines](./contributing).
+development. Before submitting pull requests, please read the [Contribution Guidelines](../../contributing/frontend).
 
 ## Code and Deployments
 
