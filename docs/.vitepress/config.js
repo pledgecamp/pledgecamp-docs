@@ -1,15 +1,13 @@
 
-const base = '/docs/'
-
 module.exports = {
   title: 'Pledgecamp Documentation',
   description: 'Pledgecamp API and Developer Documentation',
   repo: 'pledgecamp/pledgecamp-docs',
-  base,
-  head: [['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }]],
+  head: [['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]],
 
   themeConfig: {
     logo: '/logo.svg',
+    docsDir: 'docs',
     nav: [
       { text: 'Services', link: '/services/' },
       { text: 'Contracts', link: '/contracts/' },
@@ -57,21 +55,11 @@ module.exports = {
             {
               text: 'Frontend',
               link: '/services/frontend/',
-              children: [
-                {
-                  text: 'Contributing',
-                  link: '/services/frontend/contributing',
-                },
-              ],
             },
             {
               text: 'Backend',
               link: '/services/backend/',
               children: [
-                {
-                  text: 'Contributing',
-                  link: '/services/backend/contributing',
-                },
                 {
                   text: 'API',
                   link: '/services/backend/api',
@@ -81,14 +69,48 @@ module.exports = {
             {
               text: 'Blockchain Oracle',
               link: '/services/oracle/',
+              children: [
+                {
+                  text: 'API',
+                  link: '/services/oracle/api',
+                },
+              ]
             },
             {
-              text: 'Ethereum Node Server',
+              text: 'Nodeserver',
               link: '/services/nodeserver/',
+              children: [
+                {
+                  text: 'API',
+                  link: '/services/nodeserver/api',
+                },
+              ],
             },
             {
               text: 'Token Bridge',
               link: '/services/tokenbridge/',
+            },
+          ],
+        },
+        {
+          text: 'Contributing',
+          link: '/contributing/',
+          children: [
+            {
+              text: 'Guidelines',
+              link: '/contributing/guidelines',
+            },
+            {
+              text: 'Code Management',
+              link: '/contributing/management',
+            },
+            {
+              text: 'Frontend',
+              link: '/contributing/frontend',
+            },
+            {
+              text: 'Backend',
+              link: '/contributing/backend',
             },
           ],
         },

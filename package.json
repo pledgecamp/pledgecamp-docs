@@ -28,5 +28,8 @@
   "homepage": "https://github.com/pledgecamp/pledgecamp-docs#readme",
   "devDependencies": {
     "vitepress": "^0.13.0"
+  },
+  "dependencies": {
+    "mermaid": "^8.9.2"
   }
 }

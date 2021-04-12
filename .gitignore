@@ -11,3 +11,6 @@ explorations
 /packages/vite/LICENSE
 *.cpuprofile
 pnpm-lock.yaml
+
+# Local Netlify folder
+.netlify
