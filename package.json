@@ -29,7 +29,9 @@
   "homepage": "https://github.com/pledgecamp/pledgecamp-docs#readme",
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^8.9.2",
-    "glob-run": "^0.1.7",
-    "vitepress": "^0.13.0"
+    "glob-run": "^0.1.7"
+  },
+  "dependencies": {
+    "vitepress": "0.13.0"
   }
 }

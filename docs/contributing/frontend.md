@@ -6,8 +6,6 @@ title: Frontend Contribution Guidelines
 
 This document outlines the contribution guidelines for the Pledgecamp frontend.
 
-[[toc]]
-
 ## Pull Requests
 Pull requests (PRs) represent a feature branch currently in progress, or ready to merge to `master`
 There may be multiple PRs per issue, but each PR should only cover a single issue (with some exceptions).

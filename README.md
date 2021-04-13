@@ -32,3 +32,7 @@ npm run mermaid
 ```
 
 converts all `.mmd` files in `mermaid/` to SVGs in `docs/img/`
+
+## TODO
+
+- Add back Table of Contents definitions (`[[toc]]`) once this issue is resolved: https://github.com/vuejs/vitepress/issues/201

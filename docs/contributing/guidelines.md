@@ -1,7 +1,5 @@
 # Coding Guidelines
 
-[[toc]]
-
 ## Summary
 
 This section of the documentation defines some of the procedures we follow when writing code. In terms of the coding lifecycle, please see

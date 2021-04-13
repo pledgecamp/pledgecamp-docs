@@ -2,8 +2,6 @@
 
 All code, both public and private is hosted on [Github](https://github.com/). Issues are managed through the Github interface.
 
-[[toc]]
-
 ## Code Lifecycle
 
 Development follows a similar model as [GIT Flow](https://nvie.com/posts/a-successful-git-branching-model/) where we have three swimlanes (branches) from which code can move right (experimental) as fast as it wants but when moving left (closer to production) the amount of checks and testing increases. The diagram below shows a typical workflow.  
