@@ -20,3 +20,15 @@ npm run dev
 ```
 npm run build
 ```
+
+## Diagrams
+
+[Mermaid](https://mermaid-js.github.io/) is used to generate some diagrams. It's not trivial to include the Mermaid runtime library directly
+in Vitepress, and the package is large (800kB+), so we use [meramid-cli](https://github.com/mermaid-js/mermaid-cli) to pre-generate images.
+
+Running
+```
+npm run mermaid
+```
+
+converts all `.mmd` files in `mermaid/` to SVGs in `docs/img/`

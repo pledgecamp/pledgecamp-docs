@@ -12,6 +12,14 @@ header {
 h4 {
   margin-top: 16px;
 }
+.container {
+  padding: 0 1.5rem 1rem !important;
+  max-width: 54rem !important;
+}
+.mermaid-img {
+  width: 100%;
+  margin: 3rem 0;
+}
 @media (min-width: 420px) {
    header .description {
     font-size: 1.4rem !important;

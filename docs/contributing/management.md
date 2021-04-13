@@ -8,24 +8,7 @@ All code, both public and private is hosted on [Github](https://github.com/). Is
 
 Development follows a similar model as [GIT Flow](https://nvie.com/posts/a-successful-git-branching-model/) where we have three swimlanes (branches) from which code can move right (experimental) as fast as it wants but when moving left (closer to production) the amount of checks and testing increases. The diagram below shows a typical workflow.  
 
-<Mermaid>
-<pre>
-sequenceDiagram
-    participant Master
-    participant Staging
-    participant Develop
-    participant Feature
-    Develop->>Feature: Create Feature branch from HEAD of Develop
-    Note over Develop,Feature: Development
-    Develop-->>Feature: Rebase latest from Develop in to feature branch
-    Feature->>Develop: Merge request from feature to develop
-    Note over Feature,Develop: Deploy development server
-    Develop->>Staging: Create clean staging branch to test and build release from
-    Note over Develop,Staging: Deploy staging server
-    Staging->>Master: Create tagged commit to be used as release
-    Note over Master: Deploy production
-</pre>
-</Mermaid>
+<img class="mermaid-img" src="../img/lifecycle.svg">
 
 In the case of emergency hotfixes which cannot wait and need to bypass the above release cycle, create a branch from the release commit itself merging back in to master and in to develop; this will hopefully be a rare event.
 
