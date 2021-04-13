@@ -8,8 +8,8 @@ The Oracle is a service that sits behind the main Pledgecamp API and is responsi
 
 The Oracle is built around the following libraries:
 
-* [Gin Gonic](https://gin-gonic.com/) - A fast, lightweight web framework for writing the APIs communicating with the nodeserver and backend
-* [imroc](https://github.com/imroc/req) - Golang http request library used to communicate with the nodeserver and backend
+* [Gin Gonic](https://gin-gonic.com/) - A fast, lightweight web framework for writing the APIs communicating with the blockchain gateway and backend
+* [imroc](https://github.com/imroc/req) - Golang http request library used to communicate with the blockchain gateway and backend
 * [upper.io](https://upper.io/db.v3/) - Data access layer for Go to create and manipulate data in the database
 * [AfterFunc](https://golang.org/pkg/time/#AfterFunc) - Used for running operations on the contracts as milestone moments
 * [PostgreSQL](https://www.postgresql.org/) - Data persistence layer

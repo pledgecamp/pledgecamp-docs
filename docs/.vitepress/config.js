@@ -77,12 +77,12 @@ module.exports = {
               ]
             },
             {
-              text: 'Nodeserver',
-              link: '/services/nodeserver/',
+              text: 'Blockchain Gateway',
+              link: '/services/gateway/',
               children: [
                 {
                   text: 'API',
-                  link: '/services/nodeserver/api',
+                  link: '/services/gateway/api',
                 },
               ],
             },

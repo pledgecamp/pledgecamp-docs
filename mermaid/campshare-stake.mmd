@@ -1,0 +1,11 @@
+sequenceDiagram
+  Note over AccountManager: Stake tokens
+  AccountManager ->> AccountStorage: [User] Initiate transfer
+  AccountStorage ->> PLGToken: [User] Send PLG to CampShare
+  AccountManager ->> CampShare: [User] Initiate stake and prepare transaction allocation
+  CampShare ->> PLGToken: Confirm allowance and convert PLG to CS
+  Note over AccountManager: Unstake tokens
+  AccountManager ->> CampShare: [CS Holder] Unstake PLG tokens
+  Note over CampShare: Confirm unstake
+  AccountManager ->> CampShare: [CS holder] Initiate withdrawal
+  CampShare ->> PLGToken: Transfer unstaked PLG tokens

@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant Web Services
+    participant Backend
+    participant Oracle
+    participant Blockchain Gateway
+    Web Services->>Backend: Initiate PLG stake/unstake
+    Backend->>Oracle: Send request
+    activate Oracle
+    Note over Web Services,Backend: Project management period
+    Note over Blockchain Gateway: Process request
+    Oracle->>Blockchain Gateway: Send stake/unstake info
+    Blockchain Gateway-->>Oracle: Confirmation
+    Oracle-->>Backend: Update CS balance  
+    deactivate Oracle

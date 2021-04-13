@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant Web Services
+    participant Backend
+    participant Oracle
+    participant Blockchain Gateway
+    Web Services->>Backend: Create Project
+    Note over Web Services,Backend: Project management period
+    Backend->>Oracle: Launch Project
+    activate Oracle
+    Oracle-->>Backend: TX Request Accepted
+    Backend-->>Web Services: Project Launching
+    Oracle->>Blockchain Gateway: Deploy Project
+    Blockchain Gateway-->>Oracle: Project Contract
+    Oracle->>Blockchain Gateway: Set Project Info
+    Blockchain Gateway-->>Oracle: Project Info Confirmed
+    Oracle->>Blockchain Gateway: Set Backers
+    Blockchain Gateway-->>Oracle: Backers Confirmed
+    Oracle->>Backend: Project confirmation
+    deactivate Oracle

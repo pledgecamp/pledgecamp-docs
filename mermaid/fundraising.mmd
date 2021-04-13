@@ -1,0 +1,6 @@
+sequenceDiagram
+  External ->> PLGToken: Request approval for transfer amount
+  External ->> PLGToken: Initiate external transfer
+  PLGToken ->> AccountManager: Gateway for transfer
+  AccountManager ->> AccountStorage: Receive external transfer
+  AccountManager ->> AccountStorage: Allocate funds to accounts

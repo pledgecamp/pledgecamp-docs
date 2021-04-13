@@ -1,0 +1,15 @@
+sequenceDiagram
+  Note over PLGProject: Project creation
+  Note over Blockchain Gateway: Obtains listing <br/> fees
+  Blockchain Gateway -->> Administrator: Passes listing fee info
+  Administrator ->> PLGProject: Set project listing fee
+  Blockchain Gateway ->> AccountManager: Passes backer list
+  ExternalWallet ->> AccountStorage: Transfer Creator's Funds
+  ExternalWallet ->> PLGProject: Transfer Backers Insurance
+  PLGProject ->> Administrator: Send listing fees
+  AccountManager ->> PLGProject: Populates backers list
+  AccountManager ->> PLGProject: [Backer] Submit milestone votes
+  Note over PLGProject: Check votes
+  Note over PLGProject: Calculate balance
+  AccountManager ->> PLGProject: [Creator] Initiate withdrawal
+  PLGProject ->> PLGToken: Transfer withdrawal to owner
