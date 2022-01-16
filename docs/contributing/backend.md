@@ -25,8 +25,8 @@ flask formatter`. Check with the team before adding or removing lint rules.
 ### Commits
 
 - Follow the commit message guidelines below
-  - Use the present tense ("Fix bug", not "Fixed bug")
-  - Use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) ("Update packages", not "Updates packages")
+  - Use the present tense ("fix bug", not "fixed bug")
+  - Use the [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) ("update packages", not "updates packages")
 - No merge commits, PRs must be rebased on `master` before merging
   - If there are conflicts, this must be done locally. A force push is necessary (`git push --force-with-lease`)
 - One task/subtask per commit
@@ -71,4 +71,3 @@ The backend is manually deployed with [Fabric](http://www.fabfile.org/):
 Non permissively licensed code should be avoided, as well as copy pasting from arbitrary online sources.
 
 If a library is not included in PyPI and is non-trivial to reproduce, exceptions can be made, but should be discussed in an issue first.
-
